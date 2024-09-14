@@ -1,0 +1,300 @@
+*{
+  margin: 0;  
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Picture\ 1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+  }
+
+
+
+header .logo h4 {
+  font-size: 1.5em;
+  width: 200px;
+  color: aqua;
+padding: 10px 180px;
+  
+ 
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 50px;
+    margin-right: 60px;
+    font-size: 17px;
+
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+} 
+
+ul li a:hover{
+    background-color: aquamarine;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 120px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #fff;
+    transition: 0.5 ease;
+    font-size: 18px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 0.8px;
+    background-color: #0c0101;
+}
+
+
+
+main{
+    margin: 10px;
+}
+
+section
+{
+    margin: 40px;
+}
+.about {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  section .about-content {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  section .about-content h1 {
+    font-size: 5em;
+  }
+
+  section .about-content p {
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: 3em;
+    opacity: 0.7;
+    padding-top: 20px;
+  }
+
+  section .about-content a {
+    background-color: #1d809f;
+    color: #fff;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  .about-content a:hover {
+    opacity: 0.9;
+  }
+
+
+section.services-content h2 {
+    font-size: 5em;
+   margin-right: 10px;
+   text-align: center;
+   margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: rgb(52, 232, 232);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #0c0101;
+}
+
+form a {
+    color: aqua;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+
+audio, video {
+    margin-top: 20px;
+    display: block;
+}
+
+
+footer {
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+   
+    header {
+        padding: 10px;
+        font-size: 50px;
+    }
+    
+    a .btn{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+ 
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+
+    form input, form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    audio, video {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+Explanation:
